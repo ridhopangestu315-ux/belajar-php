@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    //login 
+    <!--tampilan login -->
 
     <div class="login-container">
         <div class="login-box">
@@ -17,13 +17,14 @@
             <h1>Selamat Datang!</h1>
             <p class="subtitle">Silakan masuk ke akunmu</p>
 
-            <form id="loginForm">
+            <form id="loginForm" action="login.php" method="POST">
 
                 <div class="input-group">
                     <label for="username">Username</label>
                     <input
                         type="text"
                         id="username"
+                        name="username"
                         placeholder="Masukkan username"
                     >
                 </div>
@@ -33,6 +34,7 @@
                     <input
                         type="password"
                         id="password"
+                        name="password"
                         placeholder="Masukkan password"
                     >
                 </div>
